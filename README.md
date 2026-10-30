@@ -1,46 +1,102 @@
-# Astro Starter Kit: Basics
+⏱️ Timer — Minimalist Countdown Timer
 
-```sh
-npm create astro@latest -- --template basics
-```
+A clean, modern, and responsive countdown timer built with React, TypeScript, and Tailwind CSS.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Designed with simplicity in mind, Timer provides a distraction-free interface to manage time intervals with smooth animations and an intuitive user experience.
 
-## 🚀 Project Structure
+✨ Features
+⏳ Countdown Timer: Displays minutes and seconds in real time.
+🎯 Quick Time Selection: Choose between 5, 10, 15, 20, 30, and 45-minute intervals.
+▶️ Start & Pause: Start the countdown or pause it whenever needed.
+🔄 Reset: Restore the timer to the currently selected duration.
+📱 Responsive Design: Adapted for mobile, tablet, and desktop screens.
+🎨 Modern UI: Minimalist design with soft colors, rounded buttons, and subtle visual effects.
+✨ Smooth Animations: Interactive hover, focus, and click transitions.
+🛠️ Technologies
+React — Component-based user interface.
+TypeScript — Static typing and improved code reliability.
+Tailwind CSS v4 — Utility-first styling and responsive layouts.
+react-timer-hook — Countdown timer functionality.
+Inter Variable — Typography.
+📸 Preview
 
-Inside of your Astro project, you'll see the following folders and files:
+<!-- Add a screenshot of your application here -->
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+<!-- ![Timer Preview](./public/preview.png) -->
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+🚀 Getting Started
+Prerequisites
 
-## 🧞 Commands
+Make sure you have installed:
 
-All commands are run from the root of the project, from a terminal:
+Node.js
+npm, yarn, or pnpm
+Installation
+Clone the repository:
+bash
+git clone https://github.com/ezejuarezg/WebTimer.git
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Navigate to the project directory:
+bash
+cd YOUR_REPOSITORY
 
-## 👀 Want to learn more?
+Install dependencies:
+bash
+npm install
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Start the development server:
+bash
+npm run dev
+
+Open the local URL displayed in your terminal.
+📂 Project Structure
+text
+src/
+├── components/
+│   └── Timer.tsx
+├── App.tsx
+├── index.css
+└── main.tsx
+
+
+The structure may vary depending on the project configuration.
+
+🎮 How to Use
+Select a countdown duration using one of the available time buttons.
+Press Start to begin the countdown.
+Press Stop to pause the timer.
+Press Start again to resume.
+Press Reset to restore the selected duration.
+🎨 Design & Responsiveness
+
+The interface uses a minimalist visual approach, combining:
+
+A warm color palette.
+Rounded and translucent buttons.
+Responsive typography.
+Smooth hover and active states.
+Adaptive layouts for different screen sizes.
+🗺️ Roadmap
+
+Potential improvements for future versions:
+
+Custom timer durations.
+Sound notification when the timer finishes.
+Dark and light themes.
+Multiple timer presets.
+Pomodoro mode.
+Progress indicator.
+🤝 Contributing
+
+Contributions, suggestions, and improvements are welcome!
+
+If you have an idea to improve the project, feel free to open an issue or submit a pull request.
+
+📄 License
+
+## 📄 License
+
+This project is licensed under the MIT License.
+See the [LICENSE](LICENSE) file for details.
+
+Built with ❤️ using React, TypeScript, and Tailwind CSS.
