@@ -3,3 +3,15 @@
 @theme {
   --font-sans: "Inter Variable", sans-serif;
 }
+
+@utility btn-time {
+  @apply tracking-normal rounded-xl border border-white/30 bg-white/25 px-8 py-3 text-base font-bold text-[#5c4a1e] transition focus:scale-105 focus:border-white/50 focus:bg-white/50 focus:text-[#3d2f0f] focus:shadow-lg focus:outline-none;
+}
+
+@utility resume-time {
+  @apply tracking-normal rounded-4xl border border-white bg-white px-12 py-3 text-[1.2rem] font-bold text-[#5c4a1e] hover:transition-all focus:scale-105 focus:border-white focus:bg-white focus:text-[#3d2f0f] focus:shadow-lg focus:outline-none focus:transition-transform;
+}
+
+@utility reset-time {
+  @apply tracking-normal rounded-4xl border border-white/30 bg-white/25 px-12 py-3 text-[1.2rem] font-bold text-white transition hover:outline-none hover:bg-white/50 focus:transform-view focus:shadow-lg focus:outline-none;
+}
