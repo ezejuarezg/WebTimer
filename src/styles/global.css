@@ -1,17 +1,47 @@
+
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter Variable", sans-serif;
 }
 
+/* Botón de tiempo */
 @utility btn-time {
-  @apply tracking-normal rounded-xl border border-white/30 bg-white/25 px-8 py-3 text-base font-bold text-[#5c4a1e] transition focus:scale-105 focus:border-white/50 focus:bg-white/50 focus:text-[#3d2f0f] focus:shadow-lg focus:outline-none;
+  @apply -m-0.5 rounded-xl border border-white/75 bg-white/25
+    px-3 py-2 text-sm font-bold tracking-normal text-[#5c4a1e]
+    transition-all duration-150 ease-out
+    hover:-translate-y-0.5 hover:shadow-md
+    focus:scale-105 focus:border-white/50 focus:bg-white/75
+    focus:text-[#3d2f0f] focus:shadow-lg focus:outline-none
+    active:translate-y-0 active:scale-95 active:shadow-sm;
+
+  @apply sm:px-4 sm:py-2.5 sm:text-sm;
+  @apply md:px-6 md:py-3 md:text-base;
 }
 
+/* Botón Resume / Start */
 @utility resume-time {
-  @apply tracking-normal rounded-4xl border border-white bg-white px-12 py-3 text-[1.2rem] font-bold text-[#5c4a1e] hover:transition-all focus:scale-105 focus:border-white focus:bg-white focus:text-[#3d2f0f] focus:shadow-lg focus:outline-none focus:transition-transform;
+  @apply rounded-full bg-white
+    px-6 py-2 text-base font-semibold text-[#514735]
+    transition-all duration-150 ease-out
+    hover:-translate-y-0.5 hover:shadow-md
+    focus:shadow-lg focus:outline-none
+    active:translate-y-0 active:scale-95 active:shadow-sm;
+
+  @apply sm:px-8 sm:py-2;
+  @apply md:px-10 md:py-2 md:text-lg;
 }
 
+/* Botón Reset */
 @utility reset-time {
-  @apply tracking-normal rounded-4xl border border-white/30 bg-white/25 px-12 py-3 text-[1.2rem] font-bold text-white transition hover:outline-none hover:bg-white/50 focus:transform-view focus:shadow-lg focus:outline-none;
+  @apply rounded-full border border-white/10 bg-white/25
+    px-6 py-2 text-base font-semibold text-white
+    transition-all duration-150 ease-out
+    hover:-translate-y-0.5 hover:bg-white/50 hover:shadow-md
+    focus:border-white/50 focus:shadow-lg focus:outline-none
+    active:translate-y-0 active:scale-95 active:shadow-sm;
+
+  @apply sm:px-8 sm:py-2;
+  @apply md:px-10 md:py-2 md:text-lg;
 }
+
